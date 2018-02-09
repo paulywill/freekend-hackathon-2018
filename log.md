@@ -13,6 +13,7 @@ Hopefully I will be able to host it online and let me test it out over the seaso
 
 **Link(s)**
 1. [Back to basics - Getting Started Guide](http://guides.rubyonrails.org/getting_started.html)
+2. [Day 1 Video](https://youtu.be/I3M0Hu2paec)
 
 
 -------------------------------
