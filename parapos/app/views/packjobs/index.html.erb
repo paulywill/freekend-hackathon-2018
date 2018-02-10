@@ -7,15 +7,17 @@
   <tr>
     <th>Packer</th>
     <th>Rig</th>
+    <th colspan="2"></th>
   </tr>
 
   <% @packjobs.each do |packjob| %>
   <tr class="<%= cycle('rowA', 'rowB') %>">
-      <tr>
+
         <td><%= packjob.packer %></td>
         <td><%= packjob.rig %></td>
         <td><%= link_to 'Show', packjob_path(packjob) %></td>
-      </tr>
+        <td><%= link_to 'Edit', edit_packjob_path(packjob) %></td>
+
     <% end %>
   </tr>
 </table>
