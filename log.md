@@ -16,6 +16,25 @@ Hopefully I will be able to host it online and let me test it out over the seaso
 2. [Day 1 Video](https://youtu.be/I3M0Hu2paec)
 
 
+### Day 2 of 4: February 9, 2018
+**Today's Progress**:
+
+Got a little bit farther through the Getting Started Guide.
+
+Learned a little about 'Strong Parameters'.
+**Thoughts**:
+
+Slow progress. There's a difference between flying through a tutorial and guide and then reading and understanding.
+
+I'm truly hoping this will be running decent by the end of the weekend.
+
+
+**Link(s)**
+1. [Strong Parameters blog post from dhh](http://weblog.rubyonrails.org/2012/3/21/strong-parameters/)
+2. [Strong Parameters](http://guides.rubyonrails.org/action_controller_overview.html#strong-parameters)
+3. [Day 2 vlog](https://youtu.be/K0EigxhpIug)
+
+
 -------------------------------
 ### Day xx: Month Day, 2018
 **Today's Progress**:
