@@ -1,4 +1,4 @@
-# Freeekend (free weekend) Hackathon 2018
+# Freekend (free weekend) Hackathon 2018
 
 ## Contents
 * [Log - click here to see my progress](log.md)

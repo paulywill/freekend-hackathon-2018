@@ -1,0 +1,23 @@
+<h1>Listing Packjobs</h1>
+
+<%= link_to 'New Packjob', new_packjob_path %> | <br>
+
+<br>
+<table id=listtable CELLPADDING="4" border="1">
+  <tr>
+    <th>Packer</th>
+    <th>Rig</th>
+  </tr>
+
+  <% @packjobs.each do |packjob| %>
+  <tr class="<%= cycle('rowA', 'rowB') %>">
+      <tr>
+        <td><%= packjob.packer %></td>
+        <td><%= packjob.rig %></td>
+        <td><%= link_to 'Show', packjob_path(packjob) %></td>
+      </tr>
+    <% end %>
+  </tr>
+</table>
+
+<br><%= link_to 'New Packjob', new_packjob_path %> |
