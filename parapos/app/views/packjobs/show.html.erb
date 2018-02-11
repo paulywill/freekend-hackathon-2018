@@ -1,3 +1,8 @@
+
+<p>
+   <b>Datestamp:</b>
+  <%= @packjob.created_at.strftime("%m/%d/%Y %I:%M %P") %><br>
+</p>
 <p>
   <strong>Packer:</strong>
   <%= @packjob.packer %>
@@ -8,5 +13,5 @@
   <%= @packjob.rig %>
 </p>
 
-<%= link_to 'Edit', edit_packjob_path(@packjob) %>
+<%= link_to 'Edit', edit_packjob_path(@packjob) %> |
 <%= link_to 'Back', packjobs_path %>

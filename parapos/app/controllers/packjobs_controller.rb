@@ -1,6 +1,6 @@
 class PackjobsController < ApplicationController
   def index
-    @packjobs = Packjob.all
+    @packjobs = Packjob.paginate(page: params[:page], per_page: 5)
   end
 
   def show
@@ -34,6 +34,14 @@ class PackjobsController < ApplicationController
     else
       render 'edit'
     end
+  end
+
+
+  def destroy
+    @packjob = Packjob.find(params[:id])
+    @packjob.destroy
+
+    redirect_to packjobs_path
   end
 
   private

@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
+  get 'packjobs/index'
 
   resources :packjobs
 
-  root 'welcome#index'
+  root 'packjobs#index'
 end

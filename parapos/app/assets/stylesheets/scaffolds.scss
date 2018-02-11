@@ -25,10 +25,11 @@ a:link{
 
 
 #listtable th{ color: black;}
-#listtable border{ color: blue; }
 #listtable tr.rowA { background-color: white; }
 #listtable tr.rowB { background-color: #65A5CF; }
+#listtable td{white-space:nowrap}
 #listtable { border-collapse:separate; empty-cells:show;}
+#listtable border{ color: blue; }
 
 #notice {
   color: green;
