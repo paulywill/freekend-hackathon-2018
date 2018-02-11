@@ -2750,3 +2750,640 @@ Processing by PackjobsController#index as HTML
 Completed 200 OK in 73ms (Views: 69.2ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/packjobs" for 127.0.0.1 at 2018-02-11 00:26:18 -0500
+Processing by PackjobsController#index as HTML
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (1.0ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (55.7ms)
+Completed 200 OK in 243ms (Views: 213.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/packjobs" for 127.0.0.1 at 2018-02-11 00:52:49 -0500
+  
+SyntaxError (/Users/paulgamble/Coding/freekend-hackathon-2018/parapos/app/controllers/packjobs_controller.rb:4: syntax error, unexpected ',', expecting ')'
+, per_page: 5)
+ ^
+/Users/paulgamble/Coding/freekend-hackathon-2018/parapos/app/controllers/packjobs_controller.rb:53: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/packjobs_controller.rb:4: syntax error, unexpected ',', expecting ')'
+app/controllers/packjobs_controller.rb:53: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/packjobs" for 127.0.0.1 at 2018-02-11 00:52:59 -0500
+Processing by PackjobsController#index as HTML
+Completed 500 Internal Server Error in 7ms
+
+
+  
+NoMethodError (undefined method `order' for nil:NilClass):
+  
+app/controllers/packjobs_controller.rb:3:in `index'
+Started GET "/packjobs" for 127.0.0.1 at 2018-02-11 00:57:36 -0500
+  
+SyntaxError (/Users/paulgamble/Coding/freekend-hackathon-2018/parapos/app/controllers/packjobs_controller.rb:3: syntax error, unexpected tLABEL
+jobs = Packjob.paginate((page: params[:page]).order('id DESC
+                              ^):
+  
+app/controllers/packjobs_controller.rb:3: syntax error, unexpected tLABEL
+Started GET "/packjobs" for 127.0.0.1 at 2018-02-11 00:57:58 -0500
+  
+SyntaxError (/Users/paulgamble/Coding/freekend-hackathon-2018/parapos/app/controllers/packjobs_controller.rb:3: syntax error, unexpected tLABEL
+]).order('id DESC'), per_page: 5
+                              ^):
+  
+app/controllers/packjobs_controller.rb:3: syntax error, unexpected tLABEL
+Started GET "/packjobs" for 127.0.0.1 at 2018-02-11 00:58:37 -0500
+Processing by PackjobsController#index as HTML
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.2ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (20.5ms)
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "...g: 0.1em 0.25em": expected "{", was ""):
+    4:     <title>Parapos</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/scaffolds.scss:112
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1603358305375218829_70339804994800'
+Started GET "/packjobs" for 127.0.0.1 at 2018-02-11 01:00:12 -0500
+Processing by PackjobsController#index as HTML
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.2ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "...g: 0.1em 0.25em": expected "{", was ""):
+    4:     <title>Parapos</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/scaffolds.scss:111
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1603358305375218829_70339843495000'
+Started GET "/packjobs" for 127.0.0.1 at 2018-02-11 01:01:04 -0500
+Processing by PackjobsController#index as HTML
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.2ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 111ms (Views: 107.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/packjobs/new" for 127.0.0.1 at 2018-02-11 01:01:14 -0500
+Processing by PackjobsController#new as HTML
+  Rendering packjobs/new.html.erb within layouts/application
+  Rendered packjobs/_form.html.erb (7.4ms)
+  Rendered packjobs/new.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 74ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/packjobs" for 127.0.0.1 at 2018-02-11 01:01:20 -0500
+Processing by PackjobsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lAaPemxk40Uapab0B5aKeSuyo0NFEo+uDuk6H8RBza9pfumgq234dVP8YfudAT84eSYarFgDS/U+MrH9j2adJQ==", "packjob"=>{"packer"=>"paul", "rig"=>"1"}, "commit"=>"Create Packjob"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.9ms)[0m  [1m[32mINSERT INTO "packjobs" ("packer", "rig", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["packer", "paul"], ["rig", "1"], ["created_at", "2018-02-11 06:01:20.153097"], ["updated_at", "2018-02-11 06:01:20.153097"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/packjobs/9
+Completed 302 Found in 12ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/packjobs/9" for 127.0.0.1 at 2018-02-11 01:01:20 -0500
+Processing by PackjobsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPackjob Load (0.3ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" WHERE "packjobs"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering packjobs/show.html.erb within layouts/application
+  Rendered packjobs/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 34ms (Views: 27.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/packjobs" for 127.0.0.1 at 2018-02-11 01:01:23 -0500
+Processing by PackjobsController#index as HTML
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.4ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 62ms (Views: 54.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/packjobs/new" for 127.0.0.1 at 2018-02-11 01:01:25 -0500
+Processing by PackjobsController#new as HTML
+  Rendering packjobs/new.html.erb within layouts/application
+  Rendered packjobs/_form.html.erb (16.9ms)
+  Rendered packjobs/new.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 82ms (Views: 78.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/packjobs" for 127.0.0.1 at 2018-02-11 01:01:28 -0500
+Processing by PackjobsController#index as HTML
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.3ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 77ms (Views: 70.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/packjobs/new" for 127.0.0.1 at 2018-02-11 01:01:43 -0500
+Processing by PackjobsController#new as HTML
+  Rendering packjobs/new.html.erb within layouts/application
+  Rendered packjobs/_form.html.erb (7.0ms)
+  Rendered packjobs/new.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 67ms (Views: 63.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/packjobs" for 127.0.0.1 at 2018-02-11 01:01:47 -0500
+Processing by PackjobsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z7U8eOYEyyiPcfvNGoPuz9RRiU/z6QOz5IJ02h59E6UyzVqiIQ3QGMYoPMKAFFuOhsUwoO74x+jUWf84VVpDLw==", "packjob"=>{"packer"=>"Tester", "rig"=>"4"}, "commit"=>"Create Packjob"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "packjobs" ("packer", "rig", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["packer", "Tester"], ["rig", "4"], ["created_at", "2018-02-11 06:01:47.704605"], ["updated_at", "2018-02-11 06:01:47.704605"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/packjobs/10
+Completed 302 Found in 6ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/packjobs/10" for 127.0.0.1 at 2018-02-11 01:01:47 -0500
+Processing by PackjobsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPackjob Load (0.2ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" WHERE "packjobs"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering packjobs/show.html.erb within layouts/application
+  Rendered packjobs/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 35ms (Views: 30.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/packjobs" for 127.0.0.1 at 2018-02-11 01:01:49 -0500
+Processing by PackjobsController#index as HTML
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.3ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 75ms (Views: 69.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/packjobs/new" for 127.0.0.1 at 2018-02-11 01:01:51 -0500
+Processing by PackjobsController#new as HTML
+  Rendering packjobs/new.html.erb within layouts/application
+  Rendered packjobs/_form.html.erb (3.9ms)
+  Rendered packjobs/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 67ms (Views: 63.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/packjobs" for 127.0.0.1 at 2018-02-11 01:01:57 -0500
+Processing by PackjobsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xcWTLc0Y4JVZE097Y8erO3LE7hGeMu5UPJSDm7c7/8s4vfX3ChH7pRBKiHT5UB56IFBX/oMjKg8MTwh5/ByvQQ==", "packjob"=>{"packer"=>"Again", "rig"=>"5"}, "commit"=>"Create Packjob"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "packjobs" ("packer", "rig", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["packer", "Again"], ["rig", "5"], ["created_at", "2018-02-11 06:01:57.415032"], ["updated_at", "2018-02-11 06:01:57.415032"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/packjobs/11
+Completed 302 Found in 11ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/packjobs/11" for 127.0.0.1 at 2018-02-11 01:01:57 -0500
+Processing by PackjobsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mPackjob Load (0.2ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" WHERE "packjobs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering packjobs/show.html.erb within layouts/application
+  Rendered packjobs/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 38ms (Views: 32.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/packjobs" for 127.0.0.1 at 2018-02-11 01:01:59 -0500
+Processing by PackjobsController#index as HTML
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.4ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 76ms (Views: 71.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/packjobs/new" for 127.0.0.1 at 2018-02-11 01:02:05 -0500
+Processing by PackjobsController#new as HTML
+  Rendering packjobs/new.html.erb within layouts/application
+  Rendered packjobs/_form.html.erb (5.4ms)
+  Rendered packjobs/new.html.erb within layouts/application (34.7ms)
+Completed 200 OK in 81ms (Views: 77.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/packjobs" for 127.0.0.1 at 2018-02-11 01:02:11 -0500
+Processing by PackjobsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cDNzc3V0zbAQUzhhzrsezXZuiM3ti/9RSGkhXibK9SCNSxWpsn3WgFkK/25ULKuMJPoxIvCaOwp4sqq8be2lqg==", "packjob"=>{"packer"=>"Paul", "rig"=>"1"}, "commit"=>"Create Packjob"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "packjobs" ("packer", "rig", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["packer", "Paul"], ["rig", "1"], ["created_at", "2018-02-11 06:02:11.460694"], ["updated_at", "2018-02-11 06:02:11.460694"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/packjobs/12
+Completed 302 Found in 8ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/packjobs/12" for 127.0.0.1 at 2018-02-11 01:02:11 -0500
+Processing by PackjobsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mPackjob Load (0.3ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" WHERE "packjobs"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering packjobs/show.html.erb within layouts/application
+  Rendered packjobs/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 46ms (Views: 38.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/packjobs" for 127.0.0.1 at 2018-02-11 01:02:13 -0500
+Processing by PackjobsController#index as HTML
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (8.3ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 74ms (Views: 61.4ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/packjobs" for 127.0.0.1 at 2018-02-11 01:03:16 -0500
+Processing by PackjobsController#index as HTML
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.3ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 64ms (Views: 54.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/packjobs" for 127.0.0.1 at 2018-02-11 01:06:01 -0500
+Processing by PackjobsController#index as HTML
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.3ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 44ms (Views: 40.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/packjobs/index?page=2" for 127.0.0.1 at 2018-02-11 01:06:11 -0500
+Processing by PackjobsController#index as HTML
+  Parameters: {"page"=>"2"}
+Started GET "/packjobs/index?page=2" for 127.0.0.1 at 2018-02-11 01:06:11 -0500
+Processing by PackjobsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering packjobs/index.html.erb within layouts/application
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.3ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 10]]
+  [1m[36mPackjob Load (0.4ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 10]]
+  Rendered packjobs/index.html.erb within layouts/application (51.7ms)
+  Rendered packjobs/index.html.erb within layouts/application (49.7ms)
+Completed 200 OK in 174ms (Views: 157.9ms | ActiveRecord: 0.8ms)
+
+
+Completed 200 OK in 162ms (Views: 156.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/packjobs/index?page=1" for 127.0.0.1 at 2018-02-11 01:06:13 -0500
+Processing by PackjobsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.3ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 74ms (Views: 68.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/packjobs/index?page=1" for 127.0.0.1 at 2018-02-11 01:07:25 -0500
+Processing by PackjobsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.2ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 43ms (Views: 38.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/packjobs/index?page=1" for 127.0.0.1 at 2018-02-11 01:08:00 -0500
+Processing by PackjobsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.3ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 44ms (Views: 40.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/packjobs/index?page=1" for 127.0.0.1 at 2018-02-11 01:10:57 -0500
+Processing by PackjobsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.1ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.2ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 46ms (Views: 41.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/packjobs/index?page=1" for 127.0.0.1 at 2018-02-11 01:11:30 -0500
+Processing by PackjobsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.3ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.2ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[36mCACHE Packjob Load (0.0ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 52ms (Views: 47.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/packjobs/index?page=1" for 127.0.0.1 at 2018-02-11 01:11:42 -0500
+Processing by PackjobsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[36mPackjob Load (0.4ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[36mPackjob Load (0.2ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  Rendered packjobs/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 41ms (Views: 37.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/packjobs/index?page=1" for 127.0.0.1 at 2018-02-11 01:12:13 -0500
+Processing by PackjobsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.2ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[36mPackjob Load (0.2ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 42ms (Views: 37.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/packjobs/index?page=1" for 127.0.0.1 at 2018-02-11 01:12:36 -0500
+Processing by PackjobsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.4ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mPackjob Load (0.5ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 68ms (Views: 61.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/packjobs/index?page=1" for 127.0.0.1 at 2018-02-11 01:13:21 -0500
+Processing by PackjobsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.2ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mPackjob Load (0.3ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 43ms (Views: 38.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/packjobs/index?page=1" for 127.0.0.1 at 2018-02-11 01:14:09 -0500
+Processing by PackjobsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.3ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (11.7ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 2..3)):
+    32: </table>
+    33: <div class="digg_pagination">
+    34:   <div class="page_info">
+    35:     <%= page_entries_info pluralize(@packjobs) %>
+    36:   </div>
+    37:   <%= will_paginate @packjobs, :container => false %>
+    38: </div>
+  
+app/views/packjobs/index.html.erb:35:in `_app_views_packjobs_index_html_erb___555654441553240339_70339803225340'
+Started GET "/packjobs/index?page=1" for 127.0.0.1 at 2018-02-11 01:14:36 -0500
+Processing by PackjobsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.2ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mPackjob Load (0.2ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 38ms (Views: 33.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/packjobs/index?page=1" for 127.0.0.1 at 2018-02-11 01:15:49 -0500
+Processing by PackjobsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.3ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (197.7ms)
+Completed 500 Internal Server Error in 217ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `page_packjobs_info' for #<#<Class:0x00007ff28adcba20>:0x00007ff286051358>):
+    32: </table>
+    33: <div class="digg_pagination">
+    34:   <div class="page_info">
+    35:     <%= page_packjobs_info @packjobs %>
+    36:   </div>
+    37:   <%= will_paginate @packjobs, :container => false %>
+    38: </div>
+  
+app/views/packjobs/index.html.erb:35:in `_app_views_packjobs_index_html_erb___555654441553240339_70339802908240'
+Started GET "/packjobs/index?page=1" for 127.0.0.1 at 2018-02-11 01:16:17 -0500
+Processing by PackjobsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.2ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mPackjob Load (0.2ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 38ms (Views: 33.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/packjobs/index?page=1" for 127.0.0.1 at 2018-02-11 01:19:25 -0500
+Processing by PackjobsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering packjobs/index.html.erb within layouts/application
+  Rendered packjobs/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/paulgamble/Coding/freekend-hackathon-2018/parapos/app/views/packjobs/index.html.erb:37: syntax error, unexpected ':', expecting ')'
+ :plural_name => "Packjobs"  :container => false );@output_b
+                              ^):
+  
+app/views/packjobs/index.html.erb:37: syntax error, unexpected ':', expecting ')'
+Started GET "/packjobs/index?page=1" for 127.0.0.1 at 2018-02-11 01:19:46 -0500
+Processing by PackjobsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.3ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mPackjob Load (0.5ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 52ms (Views: 45.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/packjobs/index?page=1" for 127.0.0.1 at 2018-02-11 01:19:55 -0500
+Processing by PackjobsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.3ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mPackjob Load (0.4ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 82ms (Views: 75.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/packjobs/index?page=1" for 127.0.0.1 at 2018-02-11 01:20:45 -0500
+Processing by PackjobsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.2ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mPackjob Load (0.3ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 38ms (Views: 34.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/packjobs/index?page=1" for 127.0.0.1 at 2018-02-11 01:20:48 -0500
+Processing by PackjobsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.2ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mPackjob Load (0.3ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 40ms (Views: 35.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/packjobs/index?page=1" for 127.0.0.1 at 2018-02-11 01:20:54 -0500
+Processing by PackjobsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.2ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mPackjob Load (0.1ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 39ms (Views: 35.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/packjobs/index?page=1" for 127.0.0.1 at 2018-02-11 01:22:21 -0500
+Processing by PackjobsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.2ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mPackjob Load (0.2ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 42ms (Views: 38.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/packjobs/index?page=1" for 127.0.0.1 at 2018-02-11 01:22:45 -0500
+Processing by PackjobsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.4ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mPackjob Load (0.3ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 150ms (Views: 145.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/packjobs/index?page=1" for 127.0.0.1 at 2018-02-11 01:22:55 -0500
+Processing by PackjobsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.2ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mPackjob Load (0.1ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 116ms (Views: 112.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/packjobs/index?page=1" for 127.0.0.1 at 2018-02-11 01:23:31 -0500
+Processing by PackjobsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.3ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mPackjob Load (0.2ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 117ms (Views: 112.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/packjobs/index?page=1" for 127.0.0.1 at 2018-02-11 01:23:40 -0500
+Processing by PackjobsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.2ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mPackjob Load (0.3ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 119ms (Views: 115.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/packjobs/index?page=1" for 127.0.0.1 at 2018-02-11 01:23:47 -0500
+Processing by PackjobsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.2ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mPackjob Load (0.2ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 111ms (Views: 106.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/packjobs/index?page=1" for 127.0.0.1 at 2018-02-11 01:25:28 -0500
+Processing by PackjobsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.2ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mPackjob Load (0.3ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (30.1ms)
+Completed 200 OK in 98ms (Views: 90.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/packjobs/new" for 127.0.0.1 at 2018-02-11 01:31:50 -0500
+Processing by PackjobsController#new as HTML
+  Rendering packjobs/new.html.erb within layouts/application
+  Rendered packjobs/_form.html.erb (67.1ms)
+  Rendered packjobs/new.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 277ms (Views: 259.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/packjobs" for 127.0.0.1 at 2018-02-11 01:32:07 -0500
+Processing by PackjobsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3yzILGNNeSABdebCSeFGYzMSb3t1o4puONvqTheXv2ciVK72pERiEEgsIc3TdvMiYYbWlGiyTjUIAGGsXLDv7Q==", "packjob"=>{"packer"=>"Paul", "rig"=>"23"}, "commit"=>"Create Packjob"}
+  [1m[35m (3.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.5ms)[0m  [1m[32mINSERT INTO "packjobs" ("packer", "rig", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["packer", "Paul"], ["rig", "23"], ["created_at", "2018-02-11 06:32:07.156262"], ["updated_at", "2018-02-11 06:32:07.156262"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/packjobs/13
+Completed 302 Found in 49ms (ActiveRecord: 7.8ms)
+
+
+Started GET "/packjobs/13" for 127.0.0.1 at 2018-02-11 01:32:07 -0500
+Processing by PackjobsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mPackjob Load (0.9ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" WHERE "packjobs"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering packjobs/show.html.erb within layouts/application
+  Rendered packjobs/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 180ms (Views: 156.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/packjobs" for 127.0.0.1 at 2018-02-11 01:32:15 -0500
+Processing by PackjobsController#index as HTML
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.5ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mPackjob Load (4.2ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (34.8ms)
+Completed 200 OK in 262ms (Views: 238.0ms | ActiveRecord: 5.1ms)
+
+

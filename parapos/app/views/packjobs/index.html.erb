@@ -4,7 +4,10 @@
 
 <br>
 
-<%= will_paginate @products %>
+<div class="digg_pagination">
+  <%= will_paginate @packjobs, :container => false %>
+</div>
+
 <table id=listtable CELLPADDING="4" border="1">
   <tr>
     <th>Datestamp</th>
@@ -27,6 +30,11 @@
     <% end %>
   </tr>
 </table>
-<%= will_paginate @products %>
+<div class="digg_pagination">
+  <div class="page_info">
+    <%= page_entries_info @packjobs %>
+  </div>
+  <%= will_paginate @packjobs,  :container => false %>
+</div>
 
 <br><%= link_to 'New Packjob', new_packjob_path %> |

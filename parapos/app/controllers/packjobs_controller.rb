@@ -1,6 +1,6 @@
 class PackjobsController < ApplicationController
   def index
-    @packjobs = Packjob.paginate(page: params[:page], per_page: 5)
+    @packjobs = Packjob.paginate(page: params[:page]).order('id DESC')
   end
 
   def show

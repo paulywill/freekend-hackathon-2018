@@ -31,3 +31,10 @@
 
 en:
   hello: "Hello world"
+  will_paginate:
+    models:
+      packjob:
+        zero:  packjobs
+        one:   packjob
+        few:   packjobs
+        other: packjobs
