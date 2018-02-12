@@ -45,7 +45,7 @@ Pagination. Finished Getting Started Guide (mostly).
 Solid template to show user tomorrow (later this morning).
 
 **Link(s)**
-1. [YouTube Day 3](https://youtu.be/7jFQf9MBDMI )
+1. [YouTube Day 3](https://youtu.be/D6bBiFISQvw)
 
 -------------------------------
 ### Day xx: Month Day, 2018

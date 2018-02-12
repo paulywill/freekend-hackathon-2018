@@ -24,7 +24,17 @@ a:link{
 
 
 
-#listtable th{ color: black;}
+#listtable th{
+	color: black;
+}
+
+#listtable tr.headerBlue{
+	background: #2e6ab1;
+	color: white;
+	padding: 0.4em 0.6em;
+	width: 27.1em;
+	margin-bottom: 0.3em;
+	text-align: center; }
 #listtable tr.rowA { background-color: white; }
 #listtable tr.rowB { background-color: #65A5CF; }
 #listtable td{white-space:nowrap}

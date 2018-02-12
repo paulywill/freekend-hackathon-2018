@@ -10,11 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180210015115) do
+ActiveRecord::Schema.define(version: 20180212055144) do
 
   create_table "packjobs", force: :cascade do |t|
     t.string "packer"
     t.string "rig"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "rigs", force: :cascade do |t|
+    t.boolean "rig_status"
+    t.string "rig_type_number"
+    t.integer "rig_season_jumpnum"
+    t.date "rig_res_last"
+    t.string "rig_res_who"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
