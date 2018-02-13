@@ -47,6 +47,6 @@ class RigsController < ApplicationController
 
   private
     def rig_params
-      params.require(:rig).permit(:packer, :rig)
+      params.require(:rig).permit(:rig_type_number)
     end
 end

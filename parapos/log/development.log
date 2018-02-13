@@ -3881,3 +3881,1002 @@ Processing by PackjobsController#index as HTML
 Completed 200 OK in 264ms (Views: 250.5ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/packjobs" for 127.0.0.1 at 2018-02-12 20:02:54 -0500
+Processing by PackjobsController#index as HTML
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (13.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (1.9ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mPackjob Load (0.3ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (66.8ms)
+Completed 200 OK in 185ms (Views: 147.4ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/packjobs" for 127.0.0.1 at 2018-02-12 20:03:01 -0500
+Processing by PackjobsController#index as HTML
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.2ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mPackjob Load (0.3ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 65ms (Views: 59.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/rigs" for 127.0.0.1 at 2018-02-12 20:04:48 -0500
+Processing by RigsController#index as HTML
+  Rendering rigs/index.html.erb within layouts/application
+  [1m[36mRig Load (0.3ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered rigs/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 60ms (Views: 54.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rigs" for 127.0.0.1 at 2018-02-12 20:08:37 -0500
+Processing by RigsController#index as HTML
+  Rendering rigs/index.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "rigs"[0m
+  [1m[36mRig Load (0.4ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered rigs/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 69ms (Views: 64.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/rigs/new" for 127.0.0.1 at 2018-02-12 20:08:41 -0500
+Processing by RigsController#new as HTML
+  Rendering rigs/new.html.erb within layouts/application
+  Rendered rigs/_form.html.erb (385.2ms)
+  Rendered rigs/new.html.erb within layouts/application (389.4ms)
+Completed 500 Internal Server Error in 451ms (ActiveRecord: 8.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00007fbab0009ac0>:0x00007fbaaa75ea38>):
+    17:   <% end %>
+    18: 
+    19:   <div class="field">
+    20:     <%= f.label :rig_status %><br />
+    21:     <%= f.check_box :rig_status %>
+    22:   </div>
+    23:   <div class="field">
+  
+app/views/rigs/_form.html.erb:20:in `block in _app_views_rigs__form_html_erb___2687194743934208242_70219873358640'
+app/views/rigs/_form.html.erb:3:in `_app_views_rigs__form_html_erb___2687194743934208242_70219873358640'
+app/views/rigs/new.html.erb:3:in `_app_views_rigs_new_html_erb__3319847365190507185_70219850281360'
+Started GET "/rigs/new" for 127.0.0.1 at 2018-02-12 20:14:40 -0500
+Processing by RigsController#new as HTML
+  Rendering rigs/new.html.erb within layouts/application
+  Rendered rigs/_form.html.erb (13.5ms)
+  Rendered rigs/new.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 56ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rigs/new" for 127.0.0.1 at 2018-02-12 20:15:51 -0500
+Processing by RigsController#new as HTML
+  Rendering rigs/new.html.erb within layouts/application
+  Rendered rigs/_form.html.erb (1.0ms)
+  Rendered rigs/new.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/paulgamble/Coding/freekend-hackathon-2018/parapos/app/views/rigs/_form.html.erb:20: syntax error, unexpected ':', expecting ')'
+end=( form.label :rig_online?: );@output_buffer.safe_append=
+                              ^
+/Users/paulgamble/Coding/freekend-hackathon-2018/parapos/app/views/rigs/_form.html.erb:32: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/Users/paulgamble/Coding/freekend-hackathon-2018/parapos/app/views/rigs/_form.html.erb:34: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/paulgamble/Coding/freekend-hackathon-2018/parapos/app/views/rigs/_form.html.erb:36: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/rigs/_form.html.erb:20: syntax error, unexpected ':', expecting ')'
+app/views/rigs/_form.html.erb:32: syntax error, unexpected keyword_end, expecting ')'
+app/views/rigs/_form.html.erb:34: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/rigs/_form.html.erb:36: syntax error, unexpected keyword_end, expecting ')'
+app/views/rigs/new.html.erb:3:in `_app_views_rigs_new_html_erb__3319847365190507185_70219882665780'
+Started GET "/rigs/new" for 127.0.0.1 at 2018-02-12 20:16:12 -0500
+Processing by RigsController#new as HTML
+  Rendering rigs/new.html.erb within layouts/application
+  Rendered rigs/_form.html.erb (2.9ms)
+  Rendered rigs/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 48ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rigs/new" for 127.0.0.1 at 2018-02-12 20:16:26 -0500
+Processing by RigsController#new as HTML
+  Rendering rigs/new.html.erb within layouts/application
+  Rendered rigs/_form.html.erb (2.8ms)
+  Rendered rigs/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 56ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rigs/new" for 127.0.0.1 at 2018-02-12 20:16:40 -0500
+Processing by RigsController#new as HTML
+  Rendering rigs/new.html.erb within layouts/application
+  Rendered rigs/_form.html.erb (3.2ms)
+  Rendered rigs/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 55ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rigs/new" for 127.0.0.1 at 2018-02-12 20:19:06 -0500
+Processing by RigsController#new as HTML
+  Rendering rigs/new.html.erb within layouts/application
+  Rendered rigs/_form.html.erb (5.3ms)
+  Rendered rigs/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 53ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rigs" for 127.0.0.1 at 2018-02-12 20:20:32 -0500
+Processing by RigsController#index as HTML
+  Rendering rigs/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "rigs"[0m
+  [1m[36mRig Load (0.4ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered rigs/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 77ms (Views: 68.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/packjobs" for 127.0.0.1 at 2018-02-12 20:20:42 -0500
+Processing by PackjobsController#index as HTML
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.3ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mPackjob Load (0.3ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 69ms (Views: 62.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/packjobs/new" for 127.0.0.1 at 2018-02-12 20:20:45 -0500
+Processing by PackjobsController#new as HTML
+  Rendering packjobs/new.html.erb within layouts/application
+  Rendered packjobs/_form.html.erb (9.4ms)
+  Rendered packjobs/new.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 82ms (Views: 71.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/packjobs/new" for 127.0.0.1 at 2018-02-12 20:20:56 -0500
+Processing by PackjobsController#new as HTML
+  Rendering packjobs/new.html.erb within layouts/application
+  Rendered packjobs/_form.html.erb (2.6ms)
+  Rendered packjobs/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 42ms (Views: 38.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/packjobs" for 127.0.0.1 at 2018-02-12 20:21:12 -0500
+Processing by PackjobsController#index as HTML
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.4ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mPackjob Load (0.4ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 93ms (Views: 85.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/rigs" for 127.0.0.1 at 2018-02-12 20:21:14 -0500
+Processing by RigsController#index as HTML
+  Rendering rigs/index.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "rigs"[0m
+  [1m[36mRig Load (0.3ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered rigs/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 51ms (Views: 46.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/rigs/new" for 127.0.0.1 at 2018-02-12 20:21:17 -0500
+Processing by RigsController#new as HTML
+  Rendering rigs/new.html.erb within layouts/application
+  Rendered rigs/_form.html.erb (6.9ms)
+  Rendered rigs/new.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 117ms (Views: 112.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rigs/new" for 127.0.0.1 at 2018-02-12 20:23:39 -0500
+Processing by RigsController#new as HTML
+  Rendering rigs/new.html.erb within layouts/application
+  Rendered rigs/_form.html.erb (2.7ms)
+  Rendered rigs/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 37ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rigs/new" for 127.0.0.1 at 2018-02-12 20:23:56 -0500
+Processing by RigsController#new as HTML
+  Rendering rigs/new.html.erb within layouts/application
+  Rendered rigs/_form.html.erb (3.0ms)
+  Rendered rigs/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 49ms (Views: 45.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rigs/new" for 127.0.0.1 at 2018-02-12 20:24:19 -0500
+Processing by RigsController#new as HTML
+  Rendering rigs/new.html.erb within layouts/application
+  Rendered rigs/_form.html.erb (3.5ms)
+  Rendered rigs/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 45ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/rigs/new" for 127.0.0.1 at 2018-02-12 20:32:51 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/rigs/new"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/rigs/new" for 127.0.0.1 at 2018-02-12 20:41:48 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/rigs/new"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/rigs/new" for 127.0.0.1 at 2018-02-12 20:44:18 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/rigs/new"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/rigs/new" for 127.0.0.1 at 2018-02-12 20:44:31 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/rigs/new"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/rigs/new" for 127.0.0.1 at 2018-02-12 20:49:06 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/rigs/new"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/rigs/new" for 127.0.0.1 at 2018-02-12 20:49:13 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/rigs/new"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/rigs/new" for 127.0.0.1 at 2018-02-12 20:51:03 -0500
+Processing by RigsController#new as HTML
+  Rendering rigs/new.html.erb within layouts/application
+  Rendered rigs/_form.html.erb (16.8ms)
+  Rendered rigs/new.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 434ms (Views: 400.9ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/rigs" for 127.0.0.1 at 2018-02-12 20:51:14 -0500
+Processing by RigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UAjVjKrjrx+6sardjtPgfuTW/XyVTv3+UeGTeCY20XzYWHOGPeHdT7ijhpMIZLE1E/pNp4dBL5uNIEQkPj/rqQ==", "rig"=>{"rig_status"=>"1", "rig_type_number"=>"Sigma #1"}, "commit"=>"Create Rig"}
+Unpermitted parameters: :rig_status, :rig_type_number
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering rigs/new.html.erb within layouts/application
+  Rendered rigs/_form.html.erb (4.7ms)
+  Rendered rigs/new.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 72ms (Views: 66.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/rigs" for 127.0.0.1 at 2018-02-12 20:51:32 -0500
+Processing by RigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VvOe4UHQfeL/VSRDOCbkWhuFliHbFU1gbH3/58O+iMTeozjr1tIPsv1HCA2+kbUR7Kkm+skanwWwvCi727eyEQ==", "rig"=>{"rig_status"=>"1", "rig_type_number"=>"Sigma #1"}, "commit"=>"Create Rig"}
+Unpermitted parameters: :rig_status, :rig_type_number
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering rigs/new.html.erb within layouts/application
+  Rendered rigs/_form.html.erb (5.5ms)
+  Rendered rigs/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 50ms (Views: 46.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/rigs" for 127.0.0.1 at 2018-02-12 20:53:23 -0500
+Processing by RigsController#index as HTML
+  Rendering rigs/index.html.erb within layouts/application
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "rigs"[0m
+  [1m[36mRig Load (0.3ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered rigs/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 45ms (Views: 37.9ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/rigs/new" for 127.0.0.1 at 2018-02-12 20:53:26 -0500
+Processing by RigsController#new as HTML
+  Rendering rigs/new.html.erb within layouts/application
+  Rendered rigs/_form.html.erb (4.1ms)
+  Rendered rigs/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 80ms (Views: 57.6ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/rigs" for 127.0.0.1 at 2018-02-12 20:53:32 -0500
+Processing by RigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wdScD9bIqmAN+eKCHw/d5eMpk5fr8HfRosT4iakpNJ5GBbdu7z9gN6mpoT0wt0J9ngrlA8vksf0TcTdQFZ4mqQ==", "rig"=>{"rig_status"=>"1", "rig_type_number"=>"Sigma #1"}, "commit"=>"Create Rig"}
+Unpermitted parameters: :rig_status, :rig_type_number
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering rigs/new.html.erb within layouts/application
+  Rendered rigs/_form.html.erb (5.1ms)
+  Rendered rigs/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 100ms (Views: 95.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/rigs" for 127.0.0.1 at 2018-02-12 20:56:00 -0500
+Processing by RigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eP2pzk8vR1PwUbMjQE4pGyqP09d6iamfayld08ooiLrwrQ/E2C01A/JDn23G+XhQ3aNjDGiGe/q36IqP0iGybw==", "rig"=>{"rig_status"=>"1", "rig_type_number"=>"testing this long string"}, "commit"=>"Create Rig"}
+Unpermitted parameters: :rig_status, :rig_type_number
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering rigs/new.html.erb within layouts/application
+  Rendered rigs/_form.html.erb (5.8ms)
+  Rendered rigs/new.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 88ms (Views: 57.3ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/rigs" for 127.0.0.1 at 2018-02-12 20:58:06 -0500
+Processing by RigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cq07GlZpqJkjHn3xKTxzL4qYiWyBz1A9a1bkMdSukKP6/Z0QwWvaySEMUb+viyJkfbQ5t5PAgli3lzNtzKeqdg==", "rig"=>{"rig_status"=>"1", "rig_type_number"=>"testing this long string"}, "commit"=>"Create Rig"}
+Unpermitted parameters: :rig_status, :rig_type_number
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering rigs/new.html.erb within layouts/application
+  Rendered rigs/_form.html.erb (5.8ms)
+  Rendered rigs/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 86ms (Views: 61.6ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/rigs" for 127.0.0.1 at 2018-02-12 20:58:40 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MseSWJElRyL+/X1+BflcdChty2i18+j3akkeRpXBqEO6lzRSBic1cvzvUTCDTg0/30F7s6f8OpK2iMkajciSlg==", "rig"=>{"rig_status"=>"1", "rig_type_number"=>"Sigma #1"}, "commit"=>"Create Rig"}
+Unpermitted parameters: :rig_status, :rig_type_number
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering rigs/new.html.erb within layouts/application
+  Rendered rigs/_form.html.erb (16.1ms)
+  Rendered rigs/new.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 424ms (Views: 377.5ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/rigs" for 127.0.0.1 at 2018-02-12 21:03:59 -0500
+Processing by RigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2GH3gw1sq9nt1BoF6gHLqUEMhpn47a+6BT1PapqaScBQMVGJmm7Zie/GNktstpritiA2Qurifd/Z/Jg2gpNzFQ==", "rig"=>{"rig_status"=>"0", "rig_type_number"=>""}, "commit"=>"Create Rig"}
+Unpermitted parameters: :rig_status, :rig_type_number
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering rigs/new.html.erb within layouts/application
+  Rendered rigs/_form.html.erb (7.3ms)
+  Rendered rigs/new.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 63ms (Views: 56.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/packjobs" for 127.0.0.1 at 2018-02-12 21:04:05 -0500
+Processing by PackjobsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BWBcVw2zMv321bwtujknqUSwp5iJRZXeziL2B5uKC0CNMPpdmrFArfTHkGM8jnbis5wXQ5tKR7sS4yFbg4MxlQ==", "packjob"=>{"packer"=>"", "rig"=>""}, "commit"=>"Create Packjob"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering packjobs/new.html.erb within layouts/application
+  Rendered packjobs/_form.html.erb (3.1ms)
+  Rendered packjobs/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 66ms (Views: 47.1ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/packjobs" for 127.0.0.1 at 2018-02-12 21:04:18 -0500
+Processing by PackjobsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"862Nrv3nXqcVdLS/jCcXoh2ZpTwJU8+SMDypQt50MkZ7/SukauUs9xdmmPEKkEbp6rUV5xtcHffs/X4exn0Ikw==", "packjob"=>{"packer"=>"Steve-O", "rig"=>"0"}, "commit"=>"Create Packjob"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[32mINSERT INTO "packjobs" ("packer", "rig", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["packer", "Steve-O"], ["rig", "0"], ["created_at", "2018-02-13 02:04:18.768902"], ["updated_at", "2018-02-13 02:04:18.768902"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/packjobs/14
+Completed 302 Found in 10ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/packjobs/14" for 127.0.0.1 at 2018-02-12 21:04:18 -0500
+Processing by PackjobsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mPackjob Load (0.5ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" WHERE "packjobs"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering packjobs/show.html.erb within layouts/application
+  Rendered packjobs/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 51ms (Views: 37.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/packjobs" for 127.0.0.1 at 2018-02-12 21:04:21 -0500
+Processing by PackjobsController#index as HTML
+  Rendering packjobs/index.html.erb within layouts/application
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "packjobs"[0m
+  [1m[36mPackjob Load (0.4ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mPackjob Load (0.7ms)[0m  [1m[34mSELECT  "packjobs".* FROM "packjobs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendered packjobs/index.html.erb within layouts/application (33.5ms)
+Completed 200 OK in 91ms (Views: 72.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/rigs" for 127.0.0.1 at 2018-02-12 21:04:33 -0500
+Processing by RigsController#index as HTML
+  Rendering rigs/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "rigs"[0m
+  [1m[36mRig Load (0.3ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered rigs/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 43ms (Views: 39.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rigs" for 127.0.0.1 at 2018-02-12 21:09:09 -0500
+Processing by RigsController#index as HTML
+  Rendering rigs/index.html.erb within layouts/application
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "rigs"[0m
+  [1m[36mRig Load (0.3ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered rigs/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 75ms (Views: 65.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/rigs/new" for 127.0.0.1 at 2018-02-12 21:09:23 -0500
+Processing by RigsController#new as HTML
+  Rendering rigs/new.html.erb within layouts/application
+  Rendered rigs/_form.html.erb (3.3ms)
+  Rendered rigs/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 88ms (Views: 55.0ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/rigs" for 127.0.0.1 at 2018-02-12 21:09:32 -0500
+Processing by RigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2v8RoDfq9ldMwMfJyU5RyHWLdUhDFxEMH2/vcOxD2JtdLjrBDh08AOiQhHbm9s5QCKgD3GMD1yCu2iCpUPTKrA==", "rig"=>{"rig_status"=>"1", "rig_type_number"=>"Sigma #1"}, "commit"=>"Create Rig"}
+Unpermitted parameter: :rig_status
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "rigs" ("rig_type_number", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["rig_type_number", "Sigma #1"], ["created_at", "2018-02-13 02:09:32.196084"], ["updated_at", "2018-02-13 02:09:32.196084"]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/rigs/1
+Completed 302 Found in 10ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/rigs/1" for 127.0.0.1 at 2018-02-12 21:09:32 -0500
+Processing by RigsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRig Load (0.4ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" WHERE "rigs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 406 Not Acceptable in 157ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionController::UnknownFormat (RigsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.4) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/rigs/1" for 127.0.0.1 at 2018-02-12 21:14:16 -0500
+Processing by RigsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRig Load (0.2ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" WHERE "rigs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering rigs/show.html.erb within layouts/application
+  Rendered rigs/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 34ms (Views: 30.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rigs" for 127.0.0.1 at 2018-02-12 21:14:20 -0500
+Processing by RigsController#index as HTML
+  Rendering rigs/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "rigs"[0m
+  [1m[36mRig Load (0.3ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered rigs/index.html.erb within layouts/application (189.7ms)
+Completed 500 Internal Server Error in 207ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `rig_status_display' for #<#<Class:0x00007fe808684618>:0x00007fe80a879c50>):
+    35: 	end %>
+    36: 
+    37: 	<td <%=dcolor%> >
+    38: 		<%= rig_status_display :boolStatus => rig.rig_status %>
+    39: 	</td>
+    40:     <td><%= rig.rig_type_number %></td>
+    41: <%
+  
+app/views/rigs/index.html.erb:38:in `block in _app_views_rigs_index_html_erb___3898683203657544302_70317292901140'
+app/views/rigs/index.html.erb:28:in `_app_views_rigs_index_html_erb___3898683203657544302_70317292901140'
+Started GET "/rigs" for 127.0.0.1 at 2018-02-12 21:14:27 -0500
+Processing by RigsController#index as HTML
+  Rendering rigs/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "rigs"[0m
+  [1m[36mRig Load (0.2ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered rigs/index.html.erb within layouts/application (176.5ms)
+Completed 500 Internal Server Error in 190ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `rig_status_display' for #<#<Class:0x00007fe808684618>:0x00007fe80b134520>):
+    35: 	end %>
+    36: 
+    37: 	<td <%=dcolor%> >
+    38: 		<%= rig_status_display :boolStatus => rig.rig_status %>
+    39: 	</td>
+    40:     <td><%= rig.rig_type_number %></td>
+    41: <%
+  
+app/views/rigs/index.html.erb:38:in `block in _app_views_rigs_index_html_erb___3898683203657544302_70317297477560'
+app/views/rigs/index.html.erb:28:in `_app_views_rigs_index_html_erb___3898683203657544302_70317297477560'
+Started GET "/rigs" for 127.0.0.1 at 2018-02-12 21:20:05 -0500
+Processing by RigsController#index as HTML
+  Rendering rigs/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "rigs"[0m
+  [1m[36mRig Load (0.2ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mRig Load (0.3ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendered rigs/index.html.erb within layouts/application (32.6ms)
+Completed 200 OK in 91ms (Views: 83.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/rigs/1/edit" for 127.0.0.1 at 2018-02-12 21:20:11 -0500
+Processing by RigsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRig Load (0.3ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" WHERE "rigs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 406 Not Acceptable in 171ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionController::UnknownFormat (RigsController#edit is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.4) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/rigs/1/edit" for 127.0.0.1 at 2018-02-12 21:21:21 -0500
+Processing by RigsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRig Load (0.2ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" WHERE "rigs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering rigs/edit.html.erb within layouts/application
+  Rendered rigs/_form.html.erb (3.5ms)
+  Rendered rigs/edit.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 43ms (Views: 39.5ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/rigs/1" for 127.0.0.1 at 2018-02-12 21:21:26 -0500
+Processing by RigsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BfzZoBflLR0vW6ej9W/c0RTGEWP1iqwYNgyiAYkZY6CNrH+qgOdfTS1Ji+1z2I2a4+qhuOeFfn3qzXVdkRBZdQ==", "rig"=>{"rig_status"=>"1", "rig_type_number"=>"Sigma #1"}, "commit"=>"Update Rig", "id"=>"1"}
+  [1m[36mRig Load (0.2ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" WHERE "rigs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameter: :rig_status
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/rigs/1
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/rigs/1" for 127.0.0.1 at 2018-02-12 21:21:26 -0500
+Processing by RigsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRig Load (0.3ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" WHERE "rigs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering rigs/show.html.erb within layouts/application
+  Rendered rigs/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 40ms (Views: 35.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rigs" for 127.0.0.1 at 2018-02-12 21:21:29 -0500
+Processing by RigsController#index as HTML
+  Rendering rigs/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "rigs"[0m
+  [1m[36mRig Load (0.3ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mRig Load (0.8ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendered rigs/index.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 79ms (Views: 73.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/rigs" for 127.0.0.1 at 2018-02-12 21:21:33 -0500
+Processing by RigsController#index as HTML
+  Rendering rigs/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "rigs"[0m
+  [1m[36mRig Load (0.3ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mRig Load (0.4ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendered rigs/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 79ms (Views: 74.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/rigs/1/edit" for 127.0.0.1 at 2018-02-12 21:21:37 -0500
+Processing by RigsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRig Load (0.4ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" WHERE "rigs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering rigs/edit.html.erb within layouts/application
+  Rendered rigs/_form.html.erb (3.6ms)
+  Rendered rigs/edit.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 111ms (Views: 104.8ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/rigs/1" for 127.0.0.1 at 2018-02-12 21:21:40 -0500
+Processing by RigsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q7qaDudFNmRCR1m+YE3fFyQaGOVw67z2GH/VfAojJ8a57pa+z0AM3vP/d+9qf3cRXvgSM5ChL3MlqIdJ/tK+MA==", "rig"=>{"rig_status"=>"1", "rig_type_number"=>"Sigma #1"}, "commit"=>"Update Rig", "id"=>"1"}
+  [1m[36mRig Load (0.5ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" WHERE "rigs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameter: :rig_status
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/rigs/1
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/rigs/1" for 127.0.0.1 at 2018-02-12 21:21:40 -0500
+Processing by RigsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRig Load (0.6ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" WHERE "rigs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering rigs/show.html.erb within layouts/application
+  Rendered rigs/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 45ms (Views: 38.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/rigs" for 127.0.0.1 at 2018-02-12 21:21:45 -0500
+Processing by RigsController#index as HTML
+  Rendering rigs/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "rigs"[0m
+  [1m[36mRig Load (2.1ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mRig Load (4.6ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendered rigs/index.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 112ms (Views: 98.8ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/rigs/1" for 127.0.0.1 at 2018-02-12 21:26:49 -0500
+Processing by RigsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRig Load (0.5ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" WHERE "rigs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering rigs/show.html.erb within layouts/application
+  Rendered rigs/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 83ms (Views: 66.7ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/rigs" for 127.0.0.1 at 2018-02-12 21:38:46 -0500
+Processing by RigsController#index as HTML
+  Rendering rigs/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "rigs"[0m
+  [1m[36mRig Load (0.3ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mRig Load (0.4ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendered rigs/index.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 83ms (Views: 75.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/rigs/new" for 127.0.0.1 at 2018-02-12 21:38:47 -0500
+Processing by RigsController#new as HTML
+  Rendering rigs/new.html.erb within layouts/application
+  Rendered rigs/_form.html.erb (11.9ms)
+  Rendered rigs/new.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 89ms (Views: 79.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/rigs" for 127.0.0.1 at 2018-02-12 21:38:54 -0500
+Processing by RigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cdKONJUpbxXGJe1rMLXiFN2xXeQiwzWOW68gesCspMz2A6VVrN6lQmJ1rtQfDX2MoJIrcALX86LqGu+jfBu2+w==", "rig"=>{"rig_status"=>"0", "rig_type_number"=>"Sigma #2"}, "commit"=>"Create Rig"}
+Unpermitted parameter: :rig_status
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "rigs" ("rig_type_number", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["rig_type_number", "Sigma #2"], ["created_at", "2018-02-13 02:38:54.341279"], ["updated_at", "2018-02-13 02:38:54.341279"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/rigs/2
+Completed 302 Found in 11ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/rigs/2" for 127.0.0.1 at 2018-02-12 21:38:54 -0500
+Processing by RigsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRig Load (0.4ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" WHERE "rigs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering rigs/show.html.erb within layouts/application
+  Rendered rigs/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 79ms (Views: 71.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rigs" for 127.0.0.1 at 2018-02-12 21:38:56 -0500
+Processing by RigsController#index as HTML
+  Rendering rigs/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "rigs"[0m
+  [1m[36mRig Load (0.4ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  [1m[36mRig Load (0.4ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  Rendered rigs/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 81ms (Views: 75.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/rigs" for 127.0.0.1 at 2018-02-12 21:39:41 -0500
+Processing by RigsController#index as HTML
+  Rendering rigs/index.html.erb within layouts/application
+  [1m[36mRig Load (0.3ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" ORDER BY id DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  Rendered rigs/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 37ms (Views: 33.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rigs/new" for 127.0.0.1 at 2018-02-12 21:40:10 -0500
+Processing by RigsController#new as HTML
+  Rendering rigs/new.html.erb within layouts/application
+  Rendered rigs/_form.html.erb (5.2ms)
+  Rendered rigs/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 91ms (Views: 85.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/rigs" for 127.0.0.1 at 2018-02-12 21:40:21 -0500
+Processing by RigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z8K2EY9dXW9luVAJQKZfa4PBYCmsoFbjcTawjnUZ3TXgE51wtqqXOMHpE7ZvHsDz/uIWvYy0kM/Ag39Xya7PAg==", "rig"=>{"rig_status"=>"1", "rig_type_number"=>"Sigma #3"}, "commit"=>"Create Rig"}
+Unpermitted parameter: :rig_status
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "rigs" ("rig_type_number", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["rig_type_number", "Sigma #3"], ["created_at", "2018-02-13 02:40:21.615531"], ["updated_at", "2018-02-13 02:40:21.615531"]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/rigs/3
+Completed 302 Found in 11ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/rigs/3" for 127.0.0.1 at 2018-02-12 21:40:21 -0500
+Processing by RigsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRig Load (0.3ms)[0m  [1m[34mSELECT  "rigs".* FROM "rigs" WHERE "rigs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering rigs/show.html.erb within layouts/application
+  Rendered rigs/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 88ms (Views: 82.9ms | ActiveRecord: 0.3ms)
+
+

@@ -1,12 +1,12 @@
 
 
-<%= form_with model: @packjob, local: true do |form| %>
+<%= form_with model: @rig, local: true do |form| %>
 
   <% if @rig.errors.any? %>
     <div id="error_explanation">
       <h2>
         <%= pluralize(@rig.errors.count, "error") %> prohibited
-        this packjob from being saved:
+        this rig from being saved:
       </h2>
       <ul>
         <% @rig.errors.full_messages.each do |msg| %>
@@ -17,16 +17,19 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :rig_status %><br />
-    <%= f.check_box :rig_status %>
-  </div>
-  <div class="field">
-    <%= f.label :rig_type_number %><br />
-    <%= f.text_field :rig_type_number %>
+    <p>
+      <%= form.label :rig_online %>
+      <%= form.check_box :rig_status %>
+    </p>
+
+    <p>
+      <%= form.label :rig_type %><br>
+      <%= form.text_field :rig_type_number %>
+    </p>
+
+    <p>
+      <%= form.submit %>
+    </p>
   </div>
 
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
 <% end %>
