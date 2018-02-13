@@ -13,7 +13,7 @@ Hopefully I will be able to host it online and let me test it out over the seaso
 
 **Link(s)**
 1. [Back to basics - Getting Started Guide](http://guides.rubyonrails.org/getting_started.html)
-2. [Day 1 Video](https://youtu.be/I3M0Hu2paec)
+2. [YouTube Day 1](https://youtu.be/I3M0Hu2paec)
 
 
 ### Day 2 of 4: February 9, 2018
@@ -32,7 +32,7 @@ I'm truly hoping this will be running decent by the end of the weekend.
 **Link(s)**
 1. [Strong Parameters blog post from dhh](http://weblog.rubyonrails.org/2012/3/21/strong-parameters/)
 2. [Strong Parameters](http://guides.rubyonrails.org/action_controller_overview.html#strong-parameters)
-3. [Day 2 vlog](https://youtu.be/K0EigxhpIug)
+3. [YouTube Day 2](https://youtu.be/K0EigxhpIug)
 
 
 ### Day 3 of 4: February 10-11, 2018
@@ -61,7 +61,7 @@ I'm going to regret not going to bed earlier.
 2/12/2018, 2:26:20 AM
 
 **Link(s)**
-1. [Day 4 of 4](https://youtu.be/wm9Nc5-V4_g)
+1. [YouTube Day 4](https://youtu.be/wm9Nc5-V4_g)
 
 -------------------------------
 ### Day xx: Month Day, 2018
